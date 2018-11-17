@@ -194,11 +194,11 @@ def print_most_popular_articles():
 if __name__ == '__main__':
     db = psycopg2.connect(dbname='news')
     drop_all_views()
-    # create_views()
+    create_views()
     # print_all_views()
 
-    # print_most_popular_articles()
-    # query_most_pop_author()
-    # query_extensive_error_logs()
+    print_most_popular_articles()
+    query_most_pop_author()
+    query_extensive_error_logs()
 
     db.close()
