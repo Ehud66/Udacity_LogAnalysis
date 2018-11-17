@@ -22,9 +22,8 @@
 
         July 29, 2016 — 2.5% errors
 ## Requirements
-* Python 3.5.3
+* Python 3.6.5
 * psycopg2
-* Postgresql 9.6
 
 ## How to run
 * load the data onto the database
@@ -35,8 +34,7 @@ psql -d news -f newsdata.sql
 ```sql
 psql -d news
 ```
-* create views
-* uncomment create_views() call in __init__ in order to create views via code.
+* create views - uncomment create_views() call in __init__ in order to create views via code.
 * python3 log_analysis.py
 
 ### Create Views
